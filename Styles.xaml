@@ -2,34 +2,48 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
+    <Style Selector="Border.cell-border /template/ ContentPresenter">
+        <Setter Property="CornerRadius" Value="0" />
+    </Style>
+
     <Style Selector="Button /template/ ContentPresenter">
         <Setter Property="CornerRadius" Value="5" />
     </Style>
     
-    <Style Selector="Button.plus /template/ ContentPresenter">
-        <Setter Property="Background" Value="#27ae60"/>
-        <Setter Property="BorderBrush" Value="#2ecc71"/>
+    <Style Selector="Button.success /template/ ContentPresenter">
+        <Setter Property="Background" Value="#047564"/>
+        <Setter Property="BorderBrush" Value="#047564"/>
     </Style>
     
-    <Style Selector="Button.plus:pointerover /template/ ContentPresenter">
-        <Setter Property="Background" Value="#23844c"/>
+    <Style Selector="Button.success:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="#025e50"/>
     </Style>
     
-    <Style Selector="Button.plus:pressed /template/ ContentPresenter">
-        <Setter Property="Background" Value="#1c663b"/>
+    <Style Selector="Button.success:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="#014a3f"/>
     </Style>
     
-    <Style Selector="Button.minus /template/ ContentPresenter">
-        <Setter Property="Background" Value="#c0392b"/>
-        <Setter Property="BorderBrush" Value="#e74c3c"/>
+    <Style Selector="Button.danger /template/ ContentPresenter">
+        <Setter Property="Background" Value="#ab323c"/>
+        <Setter Property="BorderBrush" Value="#ab323c"/>
     </Style>
     
-    <Style Selector="Button.minus:pointerover /template/ ContentPresenter">
-        <Setter Property="Background" Value="#a33225"/>
+    <Style Selector="Button.danger:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="#85252d"/>
     </Style>
     
-    <Style Selector="Button.minus:pressed /template/ ContentPresenter">
-        <Setter Property="Background" Value="#822a20"/>
+    <Style Selector="Button.danger:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="#611b21"/>
+    </Style>
+    <Style Selector="Button.normal /template/ ContentPresenter">
+        <Setter Property="Background" Value="#5b5c5c" />
+        <Setter Property="BorderBrush" Value="#5b5c5c" />
+    </Style>
+    <Style Selector="Button.normal:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="#494a4a"/>
+    </Style>
+    <Style Selector="Button.normal:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="#2b2b2b"/>
     </Style>
     <Style Selector="TextBlock.title">
         <Setter Property="FontSize" Value="24" />
